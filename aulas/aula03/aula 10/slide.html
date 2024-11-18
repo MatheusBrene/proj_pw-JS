@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#flip").click(function() {
+                $("#panel").slideDown("slow");
+            });
+        });
+    </script>
+    <style>
+        #panel, #flip {
+            padding: 5px;
+            text-align: center;
+            background-color: aqua;
+            border: solid 1px #0026ff;
+        }
+
+        #panel {
+            padding: 50px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="flip">Clique aqui para descer a mensagem</div>
+    <div id="panel">O Corinthians é o melhor time do Brasil</div>
+</body>
+</html>
